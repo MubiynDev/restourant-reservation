@@ -13,7 +13,7 @@
     "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\"",
     "prepare": "husky install"
   },
-  "author": "Inal Kara",
+  "author": "",
   "license": "ISC",
   "dependencies": {
     "@types/cookie-parser": "^1.4.3",
