@@ -1,0 +1,35 @@
+h1 {
+  font-family: Times New Roman; font-size: 70px;}
+p {
+  font-family: Times New Roman;
+  font-size: 17px;
+}
+.firstcharacter {
+  float: left;
+  font-size: 75px;
+  line-height: 60px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+  font-family: Georgia;
+
+}
+.smaller-image {
+  width: 700px;
+}
+.smaller-image-2{
+  width: 580px;
+}
+.subtitle {
+  font-family: Times New Roman;
+  font-size: 30px;}
+.name {
+  font-size: 18px;
+  font-family: Georgia;
+ }
+.youtube {
+  margin-bottom: 80px;
+}
+.header {
+  margin-top: 20px;
+}

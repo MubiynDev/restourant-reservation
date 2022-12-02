@@ -1,0 +1,153 @@
+ <!DOCTYPE html>
+<html>
+<title>Restourant || <%=title%></title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+<!-- style -->
+<link rel="stylesheet" type="text/css" href="/style/navMenu.css">
+<link rel="stylesheet" type="text/css" href="/style/reservation.css"> 
+   <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+<!-- lib -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.3.1/main.min.css">
+
+<body>
+<header>
+		<nav id="main-navbar" class="navbar navbar-default navbar-fixed-top">
+			<div class="container navbar-container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">Logo</a>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="/">Home</a></li>
+						<li><a href="/rezervasiya">Rezervasiya</a></li>
+						<li><a href="/menyu">Menyu</a></li>
+						<li><a href="/interyer">Interyer</a></li>
+						<li><a href="/haqqimizda">Haqqimizda</a></li>
+						<li><a href="/contact">Elaqe</a></li>
+						</li>
+					</ul>
+				</div>
+				<div class="top-social">
+					<ul id="top-social-menu">
+						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#">Careers</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+<br><br><br><br><br><br><br>  <br>  <br><br>
+<div class="cafeMap">
+    <img class="mapFoto" src="https://fpg.roomsketcher.com/image/project/3d/167/-floor-plan.jpg?w=500&h=500">
+</div>
+
+
+        <div class="booking-widget">
+                <div class='booking-widget__header'>
+                    <figure>
+                      <img src='https://images.unsplash.com/photo-1601893211509-81b6d03e46a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80'>
+                      <figcaption class='header-caption'>
+                        <h3 id="">Hotel Relais</h3>
+                        <span id=""><i class="fa fa-map-marker" aria-hidden="true"></i> Paris, France</span>
+                      </figcaption>         
+                    </figure>
+                </div>
+                <form method="POST" action="/rezervasiya">
+                    <ul class='booking-widget__form'>
+                     <li>
+                            <label for='check-in'>First Name</label>
+                            <div id='check-in' class='form-field'>
+                                <input type="text" name="firstName" class="dateRes" value="" placeholder="John">
+                                <div class='datepicker'><i class="fas fa-users"></i>/div>
+                            </div>
+                        </li>
+                        <li>
+                            <label for='check-in'>Last Name</label>
+                            <div id='check-in' class='form-field'>
+                                <input type="text" name="lastName" class="dateRes" value="" placeholder="Doe">
+                                <div class='datepicker'><i class="fas fa-users"></i></div>
+                            </div>
+                        </li>
+                        <li>
+                            <label for='check-in'>Select Date</label>
+                            <div id='check-in' class='form-field'>
+                                <input type="date" name="date" class="dateRes" value="" placeholder="9 July, 2022">
+                                <div class='datepicker'><i class="fa fa-calendar" aria-hidden="true"></i></div>
+                            </div>
+                        </li>
+                        
+                        <!-- <li>
+                          <div class=' form-field form-field__checkbox'>
+                            <input type="checkbox" name="flexibleDates" id='flexibleDates' value="">
+                          </div>
+                            <label for="flexibleDates">Flexible dates</label>
+                        </li> -->
+                        <li>
+                            <div class='form__dropdown'>
+                                <label for='adultsAmount'>How Many People</label>
+                                <div class='form-field'> 
+                                <select id='adultsAmount' name="people"> 
+                                        <option value="0" selected="selected"></option>     
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                </select>
+                                <div class='select-button'><i class="fa fa-caret-down" aria-hidden="true"></i></div>
+                            </div>
+                            </div>
+                            <div class='form__dropdown'>
+                                <label for='childrenAmount'>Table Number</label>
+                                <br>
+                              <div class='form-field'> 
+                                <select id='childrenAmount' name="table_number" class="table-num"> 
+                                        <option value="0" selected="selected"></option>                        
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                </select>
+                                <div class='select-button'><i class="fa fa-caret-down" aria-hidden="true"></i></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <button type="submit" id='bookingSubmit' class='form__submit' value='Send Reservation'>
+                        </li>
+                    </ul>       
+                </form>
+            </div>
+
+
+<!-- script -->
+
+<script type="text/javascript" src="/script/navMenu.js"></script>
+<script type="text/javascript" src="/script/index.js"></script>
+
+<!-- lib -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/fullcalendar@5.3.1/main.min.js"></script>
+       
+</body>
+</html> 
